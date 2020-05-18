@@ -23,7 +23,7 @@ const firebase = require('firebase/app');
 require('firebase/database');
 
 // We initialize Firebase using a client-side config.
-const firebaseConfig = require('./firebase-config.json').result;
+const firebaseConfig = require('./firebase-config.json').result.sdkConfig;
 (firebase.default || firebase).initializeApp(firebaseConfig);
 
 
